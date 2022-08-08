@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getNextId, birds } from "./counter";
 
 function AddForm() {
-  console.log(birds);
+  //console.log(birds);
 
   const [species, setSpecies] = useState("");
   const [date, setDate] = useState("");
@@ -13,10 +13,10 @@ function AddForm() {
     event.preventDefault();
     const newBird = {
       id: getNextId(),
-      species,
       date,
-      notes,
       imageUrl,
+      notes,
+      species,
     };
 
     console.log(newBird);
