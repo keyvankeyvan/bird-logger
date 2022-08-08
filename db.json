@@ -3,7 +3,7 @@
   {
     "id": 1,
     "date": "Jul, 2022",
-    "imageUrl": "../birdphotos/BaIb.jpg",
+    "imageUrl": "./src/birdphotos/BaIb.jpg",
     "notes": "Quite large and not timid. Bronx Zoo, Bronx.",
     "species": "Bald Ibis"
   },

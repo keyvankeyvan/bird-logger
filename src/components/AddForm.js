@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { getNextId, birds } from "./counter";
 
-function AddForm() {
-  //console.log(birds);
+function AddForm({ addBird }) {
+  //console.log(addBird);
 
   const [species, setSpecies] = useState("");
   const [date, setDate] = useState("");
@@ -19,8 +19,8 @@ function AddForm() {
       species,
     };
 
-    console.log(newBird);
-    //onAddPet(newPet)
+    //console.log(newBird);
+    addBird(newBird);
   }
 
   return (

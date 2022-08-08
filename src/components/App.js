@@ -15,20 +15,24 @@ function App() {
       .then((birds) => setBirds(birds));
   }, []);
 
-  console.log(birds);
+  function addBird(birdObj) {
+    //console.log(birdObj)
+    setBirds([...birds, birdObj]);
+  }
+  //console.log(birds);
 
   return (
     <>
       <Navbar />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home birdList={birds} />
         </Route>
         <Route path="/About">
           <About />
         </Route>
         <Route path="/Add">
-          <Add />
+          <Add addBird={addBird} />
         </Route>
       </Switch>
     </>

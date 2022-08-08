@@ -70,4 +70,4 @@ const getNextId = (
     ++id
 )(9);
 
-//export { birds, getNextId };
+export { getNextId };
