@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./Home";
+import About from "./About";
+import Add from "./Add";
 
 function App() {
   return (
@@ -11,9 +13,11 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/About">"will be about"</Route>
+        <Route path="/About">
+          <About />
+        </Route>
         <Route path="/Add">
-          <Home />
+          <Add />
         </Route>
       </Switch>
     </>

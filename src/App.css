@@ -25,18 +25,3 @@
     transform: rotate(360deg);
   }
 }
-
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #064789;
-  color: white;
-  padding: 20px;
-  margin: 0;
-}
-
-nav span {
-  margin-right: 10px;
-}
