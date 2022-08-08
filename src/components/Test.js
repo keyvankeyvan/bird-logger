@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import buki from "../birdphotos/yeCa.jpg";
 
 function Test() {
-    return (
-        <>
-        HELLO
-        </>
-    );
+  return (
+    <div id="123123132">
+      <img src={buki} alt="asd" />
+    </div>
+  );
 }
 
 export default Test;
