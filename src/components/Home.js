@@ -1,6 +1,6 @@
 import React from "react";
 
-function Add() {
+function Home() {
   return (
     <div id="home">
       <h1>Bird Lister</h1>
@@ -9,4 +9,4 @@ function Add() {
   );
 }
 
-export default Add;
+export default Home;
