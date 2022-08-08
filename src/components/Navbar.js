@@ -1,10 +1,13 @@
 import React from "react";
+import { Link, usehistory } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div id="cxvbxcvbxcvb">
-      <h1>asdasd</h1>
-    </div>
+    <nav id="navbar">
+      <Link to="/">Home </Link>
+      <Link to="/About">About </Link>
+      <Link to="/Add">Add a spotting! </Link>
+    </nav>
   );
 }
 
