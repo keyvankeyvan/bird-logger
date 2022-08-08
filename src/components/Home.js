@@ -5,6 +5,7 @@ function Home({ birdList }) {
   //console.log(birdList);
 
   const birdCards = birdList.map((birdObj) => {
+    //console.log(birdObj);
     return (
       <BirdCard
         key={birdObj.id}

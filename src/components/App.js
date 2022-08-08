@@ -5,6 +5,7 @@ import Home from "./Home";
 import About from "./About";
 import Add from "./Add";
 //import { birds as birdsArray } from "./counter";
+//import buki from "../birdphotos/yeCa.jpg";
 
 function App() {
   const [birds, setBirds] = useState([]);

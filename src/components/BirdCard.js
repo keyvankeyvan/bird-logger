@@ -20,3 +20,4 @@ function BirdCard({
 export default BirdCard;
 
 //{isAdopted ? null : <button>Adopt</button>}
+//<img src={imageUrl} alt={species} />
