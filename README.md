@@ -1,4 +1,4 @@
-# The MET Trip Planner
+# Bird Logger
 
 ![DemoGif]()
 
