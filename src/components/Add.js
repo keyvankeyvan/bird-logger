@@ -11,8 +11,8 @@ function Add({ addBird, birdLen }) {
       <AddForm addBird={addBird} birdLen={birdLen} />
       <p>
         Need help identifying a bird?
-        <a href="https://merlin.allaboutbirds.org/">Merlin</a> is a tool made by
-        the Cornell Lab of Ornithology that you can use to ID birds using a
+        <a href="https://merlin.allaboutbirds.org/"> Merlin</a> is a tool made
+        by the Cornell Lab of Ornithology that you can use to ID birds using a
         picture, audio recording, or general description.
       </p>
     </div>
