@@ -6,10 +6,8 @@ This Bird Logger helps serve as a log for birds that you have sighted!
 
 ## Features
 
-- Pt1
-- Pt2
-- Pt3
-- Pt4
+- View a list of birds that you have previously spotted.
+- Add new sightings to your database using species, date, notes, & images.
 
 ## License
 
