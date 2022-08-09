@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, usehistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (

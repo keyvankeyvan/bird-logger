@@ -11,13 +11,16 @@ function BirdCard({
       <h2>{species}</h2>
       <img src={imageUrl} alt={species} />
 
-      <h3>Spotted on: {date}</h3>
-      <h3>Notes: {notes}</h3>
+      <p>
+        <b>Spotted on: </b>
+        {date}
+      </p>
+      <p>
+        <b>Notes: </b>
+        {notes}
+      </p>
     </div>
   );
 }
 
 export default BirdCard;
-
-//{isAdopted ? null : <button>Adopt</button>}
-//<img src={imageUrl} alt={species} />

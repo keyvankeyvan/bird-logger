@@ -4,11 +4,10 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import About from "./About";
 import Add from "./Add";
-//import { birds as birdsArray } from "./counter";
-//import buki from "../birdphotos/yeCa.jpg";
 
 function App() {
   const [birds, setBirds] = useState([]);
+  const birdArrLen = birds.length;
 
   useEffect(() => {
     fetch("http://localhost:4000/birds")
@@ -17,10 +16,16 @@ function App() {
   }, []);
 
   function addBird(birdObj) {
-    //console.log(birdObj)
+    fetch("http://localhost:4000/birds", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(birdObj),
+    }).then((r) => r.json());
+
     setBirds([...birds, birdObj]);
   }
-  //console.log(birds);
 
   return (
     <>
@@ -33,7 +38,7 @@ function App() {
           <About />
         </Route>
         <Route path="/Add">
-          <Add addBird={addBird} />
+          <Add addBird={addBird} birdLen={birdArrLen} />
         </Route>
       </Switch>
     </>

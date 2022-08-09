@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { getNextId, birds } from "./counter";
+import React, { useState } from "react";
 
-function AddForm({ addBird }) {
-  //console.log(addBird);
-
+function AddForm({ addBird, birdLen }) {
   const [species, setSpecies] = useState("");
   const [date, setDate] = useState("");
   const [notes, setNotes] = useState("");
   const [imageUrl, setImageUrl] = useState("");
 
+  console.log(birdLen);
+  birdLen = birdLen + 1;
+
   function handleSubmit(event) {
     event.preventDefault();
     const newBird = {
-      id: getNextId(),
+      id: birdLen,
       date,
       imageUrl,
       notes,
       species,
     };
 
-    //console.log(newBird);
     addBird(newBird);
   }
 
